@@ -10,3 +10,10 @@ function arithmetic_Compute()
 }
 
 arithmetic_Compute
+
+function arthematic_Compute_second()
+{
+  echo "$(( $a*$b+$c ))"
+}
+
+arthematic_Compute_second
