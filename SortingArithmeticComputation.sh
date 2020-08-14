@@ -17,3 +17,10 @@ function arthematic_Compute_second()
 }
 
 arthematic_Compute_second
+
+function arthematic_Compute_third()
+{
+  echo "$(( $c+$a/$b ))"
+}
+
+arthematic_Compute_third
