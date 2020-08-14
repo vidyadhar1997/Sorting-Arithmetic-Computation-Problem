@@ -1,8 +1,8 @@
-#!/bin/bash -x
-
-read -p "enter the 1st no: " a
-read -p "enter the 2nd no: " b
-read -p "enter the 3rd no: " c
+#!/bin/bash
+ 
+read -p "enter the 1st no:" a
+read -p "enter the 2nd no:" b
+read -p "enter the 3rd no:" c
 
 function arthematic_Compute()
 {
@@ -34,3 +34,9 @@ result[$((count++))]="$( arthematic_Compute_fourth $(($a,$b,$c)) )"
 
 echo "${result[@]}"
 echo "${!result[@]}"
+
+for (( i=0; i<4; i++ ))
+do
+     arr[i]=${result[$i]}
+     echo "${arr[i]}"
+done
